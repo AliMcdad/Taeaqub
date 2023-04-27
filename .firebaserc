@@ -1,13 +1,4 @@
 {
-  "targets": {
-    "taeaqub-93e0d": {
-      "hosting": {
-        "Taeaqub": [
-          "taeaqub-93e0d"
-        ]
-      }
-    }
-  },
   "projects": {
     "default": "taeaqub-93e0d"
   }

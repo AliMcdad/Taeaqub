@@ -1,0 +1,30 @@
+<div class="hero">
+    <h1>Create an account</h1>
+    <!--signup-box-->
+    <div class="signup-box">
+        <!--left-box-->
+        <div class="left-box">
+            <form [formGroup]="signupForm" >
+                <!-- <input class="input-box" formControlName="username" id="username" type="text" placeholder="username" required> -->
+                <input class="input-box" formControlName="email" id="email" type="email" placeholder="Your email" >
+                <input class="input-box" formControlName="password" id="password" type="password" placeholder="Create Password" required >
+                <input type="checkbox" id="terms">
+                <label for="terms">I accept the terms & conditions.</label>
+                <button (click)="register()" type="submit" id="SIGNUP">
+                    Sign Up <span>&#x27f6;</span>
+                </button>
+            </form>
+        </div>
+        <!--right-box-->
+        <div class="right-box">
+            <a href="" class="fb-link"><fa-icon [icon]="FAfacebook"></fa-icon> Connect with Facebook</a>
+            <a href="" class="tw-link"><fa-icon [icon]="FAtwitter"></fa-icon> Connect with Twitter</a>
+            <a href="" class="go-link"><fa-icon [icon]="FAgoogle"></fa-icon> Connect with Google</a>
+        </div>
+    </div>
+
+    <p class="login-msg">
+        I already have an account? <a routerLink="/login">Login Now</a>
+    </p>
+
+</div>
